@@ -92,7 +92,7 @@ function App() {
             <>
               <h1>Mini Regulatory Report Assistant</h1>
               <textarea
-                placeholder="Example: 'Patient experienced severe nausea and headache after taking Drug X. Patient recovered.\nUse 'mild/moderate/severe' for severity and 'recovered/ongoing/fatal' for outcome."
+                placeholder="Example: 'Patient experienced severe nausea and headache after taking Drug X. Patient recovered.Use 'mild/moderate/severe' for severity and 'recovered/ongoing/fatal' for outcome."
                 value={report}
                 onChange={(e) => setReport(e.target.value)}
               />
