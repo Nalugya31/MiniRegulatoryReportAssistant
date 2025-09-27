@@ -27,7 +27,9 @@ The project includes a FastAPI backend and a React frontend.
 Set up instructions are in both the backend and frontend folders.
 
 ### Backend Setup (Local)
-1. **Clone the Repository**:
+1. **Clone the Repository**:<img width="1742" height="880" alt="translate" src="https://github.com/user-attachments/assets/eaea9546-def2-4b4e-9904-cdc2e31f5a2f" />
+<img width="1742" height="880" alt="chart" src="https://github.com/user-attachments/assets/940ac51a-7330-41bc-861a-28308fb902ec" />
+
 2. ```bash
    git clone <your-repo-url>
    cd MiniRegulatoryReportAssistant/backend
@@ -44,3 +46,10 @@ Example:
 Patient experienced severe nausea and headache after taking Drug X. Patient recovered.
 
 Link to the deployed project: https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app/
+
+<img width="1742" height="880" alt="History" src="https://github.com/user-attachments/assets/af0d69e7-b9c9-4e1a-b692-846a046ca415" />
+
+<img width="1742" height="880" alt="chart" src="https://github.com/user-attachments/assets/2d48aaa5-bfe0-4c4d-b62a-7d87c962f183" />
+<img width="1742" height="880" alt="History" src="https://github.com/user-attachments/assets/5c316a7a-215b-4231-928b-b35e222f41cd" />
+
+
