@@ -14,8 +14,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Local development
-        "https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app",  # Replace with your actual Vercel URL
-        "https://*.vercel.app"  # Allow all Vercel subdomains (less secure but convenient)
+        "https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app",
+        "https://*.vercel.app"  # Allow all Vercel subdomains
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -101,7 +101,7 @@ async def translate_outcome(outcome: str = None, lang: str = "fr"):
         print(f"Translating '{outcome}' to {lang}")  # Debug log
         time.sleep(1)  # Add delay to avoid rate limiting
         translation = translator.translate(outcome, dest=lang).text
-        print(f"Translated to: {translation}")  # Debug log
+        print(f"Translated to: {translation}")  # Debug log to inspect my errors
         return {"translation": translation}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Translation error: {str(e)}")
