@@ -13,31 +13,40 @@ function App() {
   const chartRef = useRef(null);
 
   const processReport = async () => {
-    const response = await fetch('https://mini-regulatory-backend.onrender.com//process-report', { // Replace with your Render URL
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ report }),
-    });
-    const data = await response.json();
-    if (data.outcome === "unknown") {
-      alert("Warning: Outcome not recognized. Use 'recovered', 'ongoing', or 'fatal'.");
+    try {
+      const response = await fetch('https://mini-regulatory-backend.onrender.com/process-report', { // Fixed: removed extra slash
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ report }),
+      });
+      const data = await response.json();
+      if (data.outcome === "unknown") {
+        alert("Warning: Outcome not recognized. Use 'recovered', 'ongoing', or 'fatal'.");
+      }
+      setResult(data);
+      fetchHistory();
+    } catch (error) {
+      console.error("Error processing report:", error);
+      alert("Error processing report: " + error.message);
     }
-    setResult(data);
-    fetchHistory();
   };
 
   const fetchHistory = async () => {
-    const response = await fetch('https://mini-regulatory-backend.onrender.com//reports'); // Replace with your Render URL
-    const data = await response.json();
-    setHistory(data);
-    updateChart(data);
+    try {
+      const response = await fetch('https://mini-regulatory-backend.onrender.com/reports'); // Fixed: removed extra slash
+      const data = await response.json();
+      setHistory(data);
+      updateChart(data);
+    } catch (error) {
+      console.error("Error fetching history:", error);
+    }
   };
 
   const translateOutcome = async () => {
     if (!result) return;
     console.log("Translating outcome:", result.outcome, "to", lang);
     try {
-      const response = await fetch(`https://mini-regulatory-backend.onrender.com//translate?outcome=${encodeURIComponent(result.outcome)}&lang=${lang}`); // Replace with your Render URL
+      const response = await fetch(`https://mini-regulatory-backend.onrender.com/translate?outcome=${encodeURIComponent(result.outcome)}&lang=${lang}`); // Fixed: removed extra slash
       const data = await response.json();
       if (response.ok) {
         setTranslatedOutcome(data.translation);
@@ -92,7 +101,7 @@ function App() {
             <>
               <h1>Mini Regulatory Report Assistant</h1>
               <textarea
-                placeholder="Example: 'Patient experienced severe nausea and headache after taking Drug X. Patient recovered.Use 'mild/moderate/severe' for severity and 'recovered/ongoing/fatal' for outcome."
+                placeholder="Example: 'Patient experienced severe nausea and headache after taking Drug X. Patient recovered. Use 'mild/moderate/severe' for severity and 'recovered/ongoing/fatal' for outcome."
                 value={report}
                 onChange={(e) => setReport(e.target.value)}
               />
