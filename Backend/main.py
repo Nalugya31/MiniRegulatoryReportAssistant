@@ -14,7 +14,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Local development
-        "https://mini-regulatory-report-assistant.vercel.app/",  # Replace with your actual Vercel URL
+        "https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app",  # Replace with your actual Vercel URL
         "https://*.vercel.app"  # Allow all Vercel subdomains (less secure but convenient)
     ],
     allow_credentials=True,
