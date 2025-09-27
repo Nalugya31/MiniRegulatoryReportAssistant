@@ -27,9 +27,7 @@ The project includes a FastAPI backend and a React frontend.
 Set up instructions are in both the backend and frontend folders.
 
 ### Backend Setup (Local)
-1. **Clone the Repository**:<img width="1742" height="880" alt="translate" src="https://github.com/user-attachments/assets/eaea9546-def2-4b4e-9904-cdc2e31f5a2f" />
-<img width="1742" height="880" alt="chart" src="https://github.com/user-attachments/assets/940ac51a-7330-41bc-861a-28308fb902ec" />
-
+1. **Clone the Repository**
 2. ```bash
    git clone <your-repo-url>
    cd MiniRegulatoryReportAssistant/backend
