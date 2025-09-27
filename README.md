@@ -14,6 +14,7 @@ The project includes a FastAPI backend and a React frontend.
 - `/backend`: Contains the FastAPI server (`main.py`), virtual environment setup, and `requirements.txt`.
 - `/frontend`: Contains the React application (source code in `src/`).
 - `README.md`: This file.
+- Deployed on vercel and render.
 
 ## Prerequisites
 - **Python 3.10+** for the backend.
@@ -41,3 +42,5 @@ Outcome: Use "recovered", "ongoing", or "fatal" (case-insensitive) for translati
 
 Example:
 Patient experienced severe nausea and headache after taking Drug X. Patient recovered.
+
+Link to the deployed project: https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app/
