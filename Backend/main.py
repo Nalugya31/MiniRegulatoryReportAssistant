@@ -9,10 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Enable CORS for frontend (React on different port)
+# Enable CORS for frontend (React on different port and Vercel deployment)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjusted for production
+    allow_origins=[
+        "http://localhost:3000",  # Local development
+        "https://mini-regulatory-report-assistant.vercel.app/",  # Replace with your actual Vercel URL
+        "https://*.vercel.app"  # Allow all Vercel subdomains (less secure but convenient)
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
