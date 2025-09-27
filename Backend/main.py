@@ -12,7 +12,7 @@ app = FastAPI()
 # Enable CORS for frontend (React on different port)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://mini-regulatory-report-assistant.vercel.app/"],  # Adjusted for production
+    allow_origins=["*"],  # Adjusted for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
