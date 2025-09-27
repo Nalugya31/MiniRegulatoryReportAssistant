@@ -14,5 +14,10 @@
       "src": "/(.*)",
       "dest": "frontend/build/$1"
     }
-  ]
+  ],
+  "functions": {
+    "frontend/src/**": {
+      "includeFiles": "frontend/**"
+    }
+  }
 }
