@@ -1,0 +1,42 @@
+
+.chart-container {
+  width: 300px; /* Reduced width */
+  height: 300px; /* Reduced height */
+  margin: 0 auto; /* Center the chart */
+}
+.App { text-align: center; margin: 20px; }
+textarea { width: 80%; height: 100px; }
+table { margin: 20px auto; border-collapse: collapse; }
+td { border: 1px solid #ddd; padding: 8px; }
+.chart-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+nav {
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* .History ul {
+  list-style-type: none;
+  padding: 0;
+} */
+.History li {
+  margin: 10px 0;
+}
+/* New styles for ordered list in History */
+.History ol {
+  paddingLeft: 10px; /* Reduced padding */
+  marginLeft: 0; /* Remove default margin */
+}
+
+.History ol li {
+  marginLeft: -10px; /* Bring text closer to numbers */
+}
