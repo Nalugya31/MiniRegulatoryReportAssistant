@@ -47,7 +47,8 @@ Patient experienced severe nausea and headache after taking Drug X. Patient reco
 
 Link to the deployed project: https://mini-regulatory-report-assistant-git-main-nalugya31s-projects.vercel.app/
 
-<img width="1742" height="880" alt="History" src="https://github.com/user-attachments/assets/af0d69e7-b9c9-4e1a-b692-846a046ca415" />
+<img width="1742" height="880" alt="translate" src="https://github.com/user-attachments/assets/e9041236-2629-4ca1-8c62-7ab9f925540f" />
+
 
 <img width="1742" height="880" alt="chart" src="https://github.com/user-attachments/assets/2d48aaa5-bfe0-4c4d-b62a-7d87c962f183" />
 <img width="1742" height="880" alt="History" src="https://github.com/user-attachments/assets/5c316a7a-215b-4231-928b-b35e222f41cd" />
