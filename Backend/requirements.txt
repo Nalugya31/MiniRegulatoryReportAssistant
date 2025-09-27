@@ -2,3 +2,4 @@ fastapi==0.117.1
 uvicorn==0.37.0
 pydantic==2.11.9
 googletrans==3.1.0a0
+legacy-cgi>=0.1.0; python_version >= "3.13"
