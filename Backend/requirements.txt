@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-pydantic
-googletrans==4.0.0-rc1
+fastapi==0.117.1
+uvicorn==0.37.0
+pydantic==2.11.9
+googletrans==3.1.0a0
